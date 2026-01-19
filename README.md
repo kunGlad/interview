@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -43,4 +43,51 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->
+
+# 设置github账号
+
+1. `vim ~/.ssh/`， 确认有公钥和私钥， 退出 `:q` \
+   2.复制 GitHub 公钥文件内容, `cat ~/.ssh/github_id_rsa.pub`，到github ssh中粘贴 \
+   3.设置全局git提交账号和邮箱: `git config --global user.name "your_name"`; `git config --global user.email "1613430161@qq.com"`;
+
+# 将本地代码上传到github
+
+1. 准备本地项目​
+
+git init
+在项目根目录执行，初始化Git仓库
+
+2. 添加文件到暂存区​
+
+git add .
+跟踪所有文件（.代表当前目录所有文件）
+
+3. 提交到本地仓库​
+
+git commit -m "提交信息"
+将暂存区文件正式保存到本地版本库
+
+4. 连接远程仓库​
+
+git remote add origin [仓库地址]
+将本地仓库与GitHub上的仓库关联
+
+5. 推送到GitHub​
+
+git push -u origin main
+将本地代码上传到GitHub（分支名可能是main或master）
+
+# 创建项目
+
+1.`npx create-react-app my-app --template typescript` 2.`cd my-app` 3.启动 `npm start`
+
+# 配置路由
+
+1.安装react-router-dom: `npm install react-router-dom`;\
+2.在 src 目录下创建一个 router 文件夹; router 文件夹下创建 index.tsx文件;\
+3.在 src 目录下创建一个 pages 文件夹; 并创建各个页面相关组件代码;\
+4.在 src/router/index.tsx 文件中配置路由;\
+ 4.1根据你的页面创建路由配置数组 routes，里面包含你的菜单页面，
+4.2导出路由对象 const router = createBrowserRouter(routes); export default router;\
+5.在 src/index.tsx 文件中引入路由对象，并使用 RouterProvider 组件包裹路由对象，并传入路由对象作为参数;
