@@ -10,6 +10,7 @@ const NativeEventsAndSyntheticEvents = lazy(
 
 const TimeoutEx = lazy(() => import("../pages/timeoutExample"));
 const Bfc = lazy(() => import("../pages/bfc"));
+const TextAlignJustify = lazy(() => import("../pages/textAlignJustify/"));
 
 const routes = [
   {
@@ -32,6 +33,10 @@ const routes = [
   {
     path: "/bfc",
     element: <Bfc />,
+  },
+  {
+    path: "/text-align-justify",
+    element: <TextAlignJustify />,
   },
 ];
 

@@ -1,0 +1,13 @@
+.demo {
+    span {
+        display: inline-block;
+        width: 100px;
+        text-align: justify;
+        text-align-last: justify;
+    }
+
+    input {
+        width: 100px;
+        display: inline-block;
+    }
+}
