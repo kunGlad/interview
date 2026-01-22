@@ -1,0 +1,12 @@
+.left {
+    float: left;
+    height: 200px;
+    margin-right: 10px;
+    background-color: red;
+}
+.right {
+    /* 设置为BFC元素 */
+    overflow: hidden;
+    height: 200px;
+    background-color: yellow;
+}

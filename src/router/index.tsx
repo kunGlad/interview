@@ -9,6 +9,7 @@ const NativeEventsAndSyntheticEvents = lazy(
 );
 
 const TimeoutEx = lazy(() => import("../pages/timeoutExample"));
+const Bfc = lazy(() => import("../pages/bfc"));
 
 const routes = [
   {
@@ -27,6 +28,10 @@ const routes = [
   {
     path: "/timeout-example",
     element: <TimeoutEx />,
+  },
+  {
+    path: "/bfc",
+    element: <Bfc />,
   },
 ];
 
