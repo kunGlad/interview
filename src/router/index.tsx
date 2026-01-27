@@ -11,6 +11,9 @@ const NativeEventsAndSyntheticEvents = lazy(
 const TimeoutEx = lazy(() => import("../pages/timeoutExample"));
 const Bfc = lazy(() => import("../pages/bfc"));
 const TextAlignJustify = lazy(() => import("../pages/textAlignJustify/"));
+const BroadCastChannel = lazy(() => import("../pages/crossPageCommunication/broadCastChannel"));
+const LocalStorage = lazy(() => import("../pages/crossPageCommunication/localStorage"));
+const ReceivePage = lazy(() => import("../pages/crossPageCommunication/receivePage"));
 
 const routes = [
   {
@@ -38,6 +41,15 @@ const routes = [
     path: "/text-align-justify",
     element: <TextAlignJustify />,
   },
+  {
+    path: "/broad-cast-channel",
+    element: <BroadCastChannel />,
+  },
+  {
+    path: "/recieve-page",
+    element: <ReceivePage />,
+  },
+  { path: "/local-storage", element: <LocalStorage /> },
 ];
 
 const router = createBrowserRouter(routes);
