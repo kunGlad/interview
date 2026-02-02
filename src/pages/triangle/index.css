@@ -1,0 +1,7 @@
+.box {
+    border: 20px solid transparent;
+    /* 一定要有个宽高限制 我们不需要宽高 ，我们取得就是border 否则就继承父元素的宽高 */
+    width: 0;
+    height: 0;
+    border-left: 20px solid red;
+}
