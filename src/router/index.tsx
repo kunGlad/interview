@@ -14,6 +14,7 @@ const TextAlignJustify = lazy(() => import("../pages/textAlignJustify/"));
 const BroadCastChannel = lazy(() => import("../pages/crossPageCommunication/broadCastChannel"));
 const LocalStorage = lazy(() => import("../pages/crossPageCommunication/localStorage"));
 const ReceivePage = lazy(() => import("../pages/crossPageCommunication/receivePage"));
+const BoxSizing = lazy(() => import("../pages/boxSizing"));
 
 const routes = [
   {
@@ -50,6 +51,7 @@ const routes = [
     element: <ReceivePage />,
   },
   { path: "/local-storage", element: <LocalStorage /> },
+  { path: "/box-sizing", element: <BoxSizing /> },
 ];
 
 const router = createBrowserRouter(routes);
