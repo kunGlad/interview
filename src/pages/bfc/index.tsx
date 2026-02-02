@@ -13,10 +13,16 @@ const BFC = () => {
     // </div>
 
     // 第二种方案 内外BFC相隔离
+    // <div>
+    //   <div className="child1"></div>
+    //   <div className="child2Wrap">
+    //     <div className="child2"></div>
+    //   </div>
+    // </div>
+
     <div>
-      <div className="child1"></div>
-      <div className="child2Wrap">
-        <div className="child2"></div>
+      <div className="parent">
+        <div className="child"></div>
       </div>
     </div>
   );
