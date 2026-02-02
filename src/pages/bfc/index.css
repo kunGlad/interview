@@ -10,3 +10,23 @@
     height: 200px;
     background-color: yellow;
 }
+
+
+.child1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: red;
+}
+.child2Wrap {
+    /* 为其中一个子元素创建一个新的、独立的 BFC，将它们分隔到不同的 BFC 中。
+    BFC 的一个重要特性就是内部元素与外部元素相互隔离，这包括了阻止与外部的 margin 合并 */
+    overflow: hidden;
+}
+.child2 {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-top: 20px;
+
+}
