@@ -17,6 +17,7 @@ const ReceivePage = lazy(() => import("../pages/crossPageCommunication/receivePa
 const BoxSizing = lazy(() => import("../pages/boxSizing"));
 const DualWingLayout = lazy(() => import("../pages/dualWingLayout"));
 const Triangle = lazy(() => import("../pages/triangle"));
+const Background = lazy(() => import("../pages/background"));
 
 const routes = [
   {
@@ -56,6 +57,7 @@ const routes = [
   { path: "/box-sizing", element: <BoxSizing /> },
   { path: "/dual-wing-layout", element: <DualWingLayout /> },
   { path: "/triangle", element: <Triangle /> },
+  { path: "/background", element: <Background /> },
 ];
 
 const router = createBrowserRouter(routes);

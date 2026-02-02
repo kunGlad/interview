@@ -1,0 +1,14 @@
+.box {
+    width: 200px;
+    color: #fff;
+    border-radius: 30px;
+    line-height: 30px;
+    padding: 20px;
+   
+    span {
+        background-color: green;
+        border-radius: 12px;
+        /* 确保跨行时背景色和边框保持连续性 */
+        box-decoration-break: clone;
+    }
+}
