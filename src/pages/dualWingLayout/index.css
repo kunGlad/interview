@@ -1,0 +1,23 @@
+.box {
+    display: flex;
+}
+.left, .right {
+    width: 200px;
+    height: 200px;
+}
+
+.left {
+    background-color: red;
+    order: 0;
+}
+.right {
+    background-color: blue;
+    order:2
+}
+
+.content {
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    order:1
+}
