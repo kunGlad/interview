@@ -18,6 +18,7 @@ const BoxSizing = lazy(() => import("../pages/boxSizing"));
 const DualWingLayout = lazy(() => import("../pages/dualWingLayout"));
 const Triangle = lazy(() => import("../pages/triangle"));
 const Background = lazy(() => import("../pages/background"));
+const IndexDB = lazy(() => import("../pages/indexDB"));
 
 const routes = [
   {
@@ -58,6 +59,7 @@ const routes = [
   { path: "/dual-wing-layout", element: <DualWingLayout /> },
   { path: "/triangle", element: <Triangle /> },
   { path: "/background", element: <Background /> },
+  { path: "/index-db", element: <IndexDB /> },
 ];
 
 const router = createBrowserRouter(routes);
