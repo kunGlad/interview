@@ -19,6 +19,7 @@ const DualWingLayout = lazy(() => import("../pages/dualWingLayout"));
 const Triangle = lazy(() => import("../pages/triangle"));
 const Background = lazy(() => import("../pages/background"));
 const IndexDB = lazy(() => import("../pages/indexDB"));
+const React18 = lazy(() => import("../pages/React18Synthesize"));
 
 const routes = [
   {
@@ -60,6 +61,7 @@ const routes = [
   { path: "/triangle", element: <Triangle /> },
   { path: "/background", element: <Background /> },
   { path: "/index-db", element: <IndexDB /> },
+  { path: "/react18", element: <React18 /> },
 ];
 
 const router = createBrowserRouter(routes);
