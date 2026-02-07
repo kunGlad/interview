@@ -21,6 +21,7 @@ const Background = lazy(() => import("../pages/background"));
 const IndexDB = lazy(() => import("../pages/indexDB"));
 const React18 = lazy(() => import("../pages/React18Synthesize"));
 const UseMemoFn = lazy(() => import("../pages/useMemoFn"));
+const FileReader = lazy(() => import("../pages/fileReader"));
 
 const routes = [
   {
@@ -64,6 +65,7 @@ const routes = [
   { path: "/index-db", element: <IndexDB /> },
   { path: "/react18", element: <React18 /> },
   { path: "/use-memo-fn", element: <UseMemoFn /> },
+  { path: "/file-reader", element: <FileReader /> },
 ];
 
 const router = createBrowserRouter(routes);
