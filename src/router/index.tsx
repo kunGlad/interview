@@ -20,6 +20,7 @@ const Triangle = lazy(() => import("../pages/triangle"));
 const Background = lazy(() => import("../pages/background"));
 const IndexDB = lazy(() => import("../pages/indexDB"));
 const React18 = lazy(() => import("../pages/React18Synthesize"));
+const UseMemoFn = lazy(() => import("../pages/useMemoFn"));
 
 const routes = [
   {
@@ -62,6 +63,7 @@ const routes = [
   { path: "/background", element: <Background /> },
   { path: "/index-db", element: <IndexDB /> },
   { path: "/react18", element: <React18 /> },
+  { path: "/use-memo-fn", element: <UseMemoFn /> },
 ];
 
 const router = createBrowserRouter(routes);
