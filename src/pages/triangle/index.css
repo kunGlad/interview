@@ -5,3 +5,27 @@
     height: 0;
     border-left: 20px solid red;
 }
+
+.empty-center-box {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    /* border-width: 50px; */
+    /* border-color: red orange yellow green; */
+    /* 想要上面的红色 就将 下左右设置为透明色 */
+    border-color: red transparent transparent ; 
+    /* 下方没颜色 但还是占据了高度 将下边框宽度设置为0 */
+    border-width: 50px 50px 0;
+    position: relative;
+}
+.empty-center-box:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: white transparent transparent;
+    border-width: 40px 40px 0;
+    position: absolute;
+    top:-46px;
+    left: -40px;
+}
