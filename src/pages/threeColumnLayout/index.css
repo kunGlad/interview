@@ -1,0 +1,69 @@
+
+.left {
+    background-color: orange;
+    height: 200px;
+    width: 100px;
+}
+.middle {
+    background-color: red;
+    height: 200px;
+}
+.right {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    .left {
+        flex-shrink: 0;
+    }
+    .right {
+        flex-shrink: 0;
+    }
+    .middle {
+        flex-grow: 1;
+    }
+}
+
+.float {
+    .left {
+        float: left;
+    }
+    .right {
+        float:right
+    }
+}
+
+.position {
+    position: relative;
+    .left {
+        position: absolute;
+        left:0;
+        top:0
+    }
+    .right {
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    .middle {
+        margin:0 200px 0 100px
+    }
+}
+
+.table {
+    display: table;
+    width: 100%;
+    .left {
+        display: table-cell;
+    }
+    .right {
+        display: table-cell;
+    }
+    .middle {
+       
+        display: table-cell;
+    }
+}

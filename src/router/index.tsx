@@ -23,6 +23,7 @@ const React18 = lazy(() => import("../pages/React18Synthesize"));
 const UseMemoFn = lazy(() => import("../pages/useMemoFn"));
 const FileReader = lazy(() => import("../pages/fileReader"));
 const Center = lazy(() => import("../center"));
+const ThreeColumnLayout = lazy(() => import("../pages/threeColumnLayout"));
 
 const routes = [
   {
@@ -68,6 +69,7 @@ const routes = [
   { path: "/use-memo-fn", element: <UseMemoFn /> },
   { path: "/file-reader", element: <FileReader /> },
   { path: "/center", element: <Center /> },
+  { path: "/three-column-layout", element: <ThreeColumnLayout /> },
 ];
 
 const router = createBrowserRouter(routes);
