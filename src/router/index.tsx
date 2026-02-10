@@ -22,7 +22,7 @@ const IndexDB = lazy(() => import("../pages/indexDB"));
 const React18 = lazy(() => import("../pages/React18Synthesize"));
 const UseMemoFn = lazy(() => import("../pages/useMemoFn"));
 const FileReader = lazy(() => import("../pages/fileReader"));
-const Center = lazy(() => import("../center"));
+const Center = lazy(() => import("../pages/center"));
 const ThreeColumnLayout = lazy(() => import("../pages/threeColumnLayout"));
 
 const routes = [
