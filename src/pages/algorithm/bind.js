@@ -63,6 +63,8 @@ Function.prototype.bind5 = function (obj) {
   const fn_ = function () {};
   const bound = function () {
     const params = [...arguments];
+    // https://www.yuque.com/echolun/hq7gts/mxa50x#4f9bbdb2
+    // 实例可以通过__proto__找到构造函数的原型，原型的constructor属性又指向构造函数自身
     fn.apply(this.constructor === fn ? this : obj, args.concat(params));
   };
   // 拷贝fn的prototype
