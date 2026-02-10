@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    function CupCustom(diameter, height) {
+            this.diameter = diameter
+            this.height = height
+        }
+        CupCustom.prototype.color = "blue"
+        var cup1 = new CupCustom(8, 15)
+        var cup2 = new CupCustom(5, 10)
+        console.log(cup1); // 打印实例，通过[[Prototype]] 代替了 之前的 __proto__
+        console.dir(CupCustom)  // 打印构造函数
+
+        function Person() {
+                this.name = '听风是风'
+            };
+
+            Person.prototype = {
+                name: 'echo',
+                age: '26'
+            }
+
+            var person = new Person()
+            console.log(person.constructor); // ƒ Object() { [native code] }
+            console.log(person.constructor === Person) //false
+            console.log(person instanceof Person) //true
+
+</script>
+</html>
