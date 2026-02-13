@@ -59,7 +59,7 @@ Function.prototype.bind5 = function (obj) {
 
   const fn = this;
   const args = [...arguments].slice(1);
-  //创建中介函数
+  //创建中介函数-单纯的拷贝fn的prototype
   const fn_ = function () {};
   const bound = function () {
     const params = [...arguments];
@@ -70,6 +70,7 @@ Function.prototype.bind5 = function (obj) {
   // 拷贝fn的prototype
   fn_.prototype = fn.prototype;
   // 我们的bound方法，将其原型指向fn创建的实例
+  // 达到修改自身原型不会影响fn原型的目的 -- person.__proto__.age
   bound.prototype = new fn_();
   return bound;
 };
