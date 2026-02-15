@@ -24,6 +24,7 @@ const UseMemoFn = lazy(() => import("../pages/useMemoFn"));
 const FileReader = lazy(() => import("../pages/fileReader"));
 const Center = lazy(() => import("../pages/center"));
 const ThreeColumnLayout = lazy(() => import("../pages/threeColumnLayout"));
+const TestReactRenderTools = lazy(() => import("../pages/testReactRenderTools"));
 
 const routes = [
   {
@@ -70,6 +71,7 @@ const routes = [
   { path: "/file-reader", element: <FileReader /> },
   { path: "/center", element: <Center /> },
   { path: "/three-column-layout", element: <ThreeColumnLayout /> },
+  { path: "/test-react-render-tools", element: <TestReactRenderTools /> },
 ];
 
 const router = createBrowserRouter(routes);
