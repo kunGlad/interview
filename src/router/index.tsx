@@ -25,41 +25,21 @@ const FileReader = lazy(() => import("../pages/fileReader"));
 const Center = lazy(() => import("../pages/center"));
 const ThreeColumnLayout = lazy(() => import("../pages/threeColumnLayout"));
 const TestReactRenderTools = lazy(() => import("../pages/testReactRenderTools"));
+const MobxShopingCart = lazy(() => import("../pages/mobx"));
 
 const routes = [
-  {
-    path: "/",
-    element: <Home />,
-  },
+  { path: "/", element: <Home /> },
   {
     path: "/use-state",
     element: <UseStateIndex />,
     // children: [{ path: "/", element: <Navigate to="home" replace /> }],
   },
-  {
-    path: "/native-events-and-synthetic-events",
-    element: <NativeEventsAndSyntheticEvents />,
-  },
-  {
-    path: "/timeout-example",
-    element: <TimeoutEx />,
-  },
-  {
-    path: "/bfc",
-    element: <Bfc />,
-  },
-  {
-    path: "/text-align-justify",
-    element: <TextAlignJustify />,
-  },
-  {
-    path: "/broad-cast-channel",
-    element: <BroadCastChannel />,
-  },
-  {
-    path: "/recieve-page",
-    element: <ReceivePage />,
-  },
+  { path: "/native-events-and-synthetic-events", element: <NativeEventsAndSyntheticEvents /> },
+  { path: "/timeout-example", element: <TimeoutEx /> },
+  { path: "/bfc", element: <Bfc /> },
+  { path: "/text-align-justify", element: <TextAlignJustify /> },
+  { path: "/broad-cast-channel", element: <BroadCastChannel /> },
+  { path: "/recieve-page", element: <ReceivePage /> },
   { path: "/local-storage", element: <LocalStorage /> },
   { path: "/box-sizing", element: <BoxSizing /> },
   { path: "/dual-wing-layout", element: <DualWingLayout /> },
@@ -72,6 +52,7 @@ const routes = [
   { path: "/center", element: <Center /> },
   { path: "/three-column-layout", element: <ThreeColumnLayout /> },
   { path: "/test-react-render-tools", element: <TestReactRenderTools /> },
+  { path: "/mobx-shoping-cart", element: <MobxShopingCart /> },
 ];
 
 const router = createBrowserRouter(routes);
