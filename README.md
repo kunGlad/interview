@@ -84,10 +84,17 @@ git push -u origin main
 
 # 配置路由
 
-1.安装react-router-dom: `npm install react-router-dom`;\
-2.在 src 目录下创建一个 router 文件夹; router 文件夹下创建 index.tsx文件;\
-3.在 src 目录下创建一个 pages 文件夹; 并创建各个页面相关组件代码;\
-4.在 src/router/index.tsx 文件中配置路由;\
- 4.1根据你的页面创建路由配置数组 routes，里面包含你的菜单页面，
-4.2导出路由对象 const router = createBrowserRouter(routes); export default router;\
-5.在 src/index.tsx 文件中引入路由对象，并使用 RouterProvider 组件包裹路由对象，并传入路由对象作为参数;
+1. 安装react-router-dom: `npm install react-router-dom`;
+
+2. 在 src 目录下创建一个 router 文件夹; router 文件夹下创建 index.tsx文件;
+3. 在 src 目录下创建一个 pages 文件夹; 并创建各个页面相关组件代码;
+4. 在 src/router/index.tsx 文件中配置路由;\
+   -- 根据你的页面创建路由配置数组 routes，里面包含你的菜单页面，
+   -- 导出路由对象 const router = createBrowserRouter(routes); export default router;
+5. 在 src/index.tsx 文件中引入路由对象，并使用 RouterProvider 组件包裹路由对象，并传入路由对象作为参数;
+
+# 引入其他包文件
+
+本地测试 npm link @kunglad/my-custom-comp
+
+真正安装/每次更新 npm install @kunglad/my-custom-comp
