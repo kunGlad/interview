@@ -1,5 +1,7 @@
 import "./index.css";
 
+// 空心三角形
+
 const Triangle = () => {
   return (
     <div>

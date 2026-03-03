@@ -13,9 +13,9 @@
     /* border-width: 50px; */
     /* border-color: red orange yellow green; */
     /* 想要上面的红色 就将 下左右设置为透明色 */
-    border-color: red transparent transparent ; 
+    border-color: transparent red transparent transparent; 
     /* 下方没颜色 但还是占据了高度 将下边框宽度设置为0 */
-    border-width: 50px 50px 0;
+    border-width: 50px 50px 50px 0;
     position: relative;
 }
 .empty-center-box:after {

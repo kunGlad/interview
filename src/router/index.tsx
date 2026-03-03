@@ -27,6 +27,7 @@ const ThreeColumnLayout = lazy(() => import("../pages/threeColumnLayout"));
 const TestReactRenderTools = lazy(() => import("../pages/testReactRenderTools"));
 const MobxShopingCart = lazy(() => import("../pages/mobx"));
 const KunGloadCustomComp = lazy(() => import("../pages/kungladCustomComp"));
+const HolyGrailLayout = lazy(() => import("../pages/holyGrailLayout"));
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -55,6 +56,7 @@ const routes = [
   { path: "/test-react-render-tools", element: <TestReactRenderTools /> },
   { path: "/mobx-shoping-cart", element: <MobxShopingCart /> },
   { path: "/kungload-custom-comp", element: <KunGloadCustomComp /> },
+  { path: "/holy-grail-layout", element: <HolyGrailLayout /> },
 ];
 
 const router = createBrowserRouter(routes);
